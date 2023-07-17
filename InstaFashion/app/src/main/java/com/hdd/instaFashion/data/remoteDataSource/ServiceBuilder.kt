@@ -15,11 +15,13 @@ object ServiceBuilder {
     // it will be changed later on
      private const val BASE_URL="http://10.0.2.2:5000/"
 
-    // for mbl deployment
+    // for college mobile deployment
 //    private const val BASE_URL="http://192.168.137.1:5000/"
 
     // Home
 //        private const val BASE_URL="http://192.168.1.69:5000/"
+
+
 
 
     //    --> enable this while using unit test and disable line number 39

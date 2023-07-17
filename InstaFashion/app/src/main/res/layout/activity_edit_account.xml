@@ -221,8 +221,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/raleway_medium"
                             android:text="Bio"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorTextSecondary"/>
+                            android:textColor="@color/colorTextSecondary"
+                            android:textSize="16sp" />
 
                     </LinearLayout>
 

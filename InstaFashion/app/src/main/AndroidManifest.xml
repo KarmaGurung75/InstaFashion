@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hdd.instaFashion">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.hardware.sensor.proximity" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InstaFashion"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <activity
+            android:name=".presentation.activity.ViewShopActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD45D5JWv9RzDd2y4Hh2eGEDEq2BRpKCrM" />
+
+        <activity
+            android:name=".presentation.activity.AddressPickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.ViewPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.RecentlyViewedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.FollowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.ViewArchivedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.AddCommentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.BottomActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom" />
+        <activity
+            android:name=".presentation.activity.IndexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.ProductDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.AddShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.activity.AddPostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.ViewOtherProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.EditAccountActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

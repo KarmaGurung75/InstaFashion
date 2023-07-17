@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="1dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/input_preparation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes/No"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="1dp"
+        android:layout_marginHorizontal="1dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/input_cooking_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XL/L"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="1dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/input_serving_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="1dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/input_quantity_pound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nike"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/input_total_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>

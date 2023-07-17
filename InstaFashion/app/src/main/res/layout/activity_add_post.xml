@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/profileActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:paddingBottom="10dp"
+    android:layout_marginHorizontal="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/post_profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/insta_round_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/post_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="User Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/post_profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/outline_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Post"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_profile_image">
+
+        <EditText
+            android:id="@+id/post_status"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:hint="What's on your mind?"
+            android:screenReaderFocusable="true"
+            android:textAlignment="textStart"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+
+        <Switch
+            android:id="@+id/post_upload_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:checked="false"
+            android:switchMinWidth="56dp"
+            android:text="Add Photo:"
+            android:textColor="@color/black"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:theme="@style/SwitchTheme" />
+
+        <ImageView
+            android:id="@+id/post_upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+            android:src="@drawable/upload"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

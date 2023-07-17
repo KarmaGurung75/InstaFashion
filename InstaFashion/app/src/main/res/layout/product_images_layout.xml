@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="5dp"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ril_recipe_image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="matrix"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ril_recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Fashion Clothe"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ril_recipe_image" />
+
+    <TextView
+        android:id="@+id/ril_hashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/goldenOpacity"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/ril_recipe_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ril_recipe_image"
+        app:layout_constraintTop_toBottomOf="@+id/ril_recipe_name" />
+
+    <TextView
+        android:id="@+id/ril_recipe_description"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Fashion is trending"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/ril_hashtag"
+        app:layout_constraintEnd_toEndOf="@+id/ril_recipe_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ril_recipe_image"
+        app:layout_constraintTop_toBottomOf="@+id/ril_recipe_name"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <LinearLayout
+        android:id="@+id/ril_recipe_ratings"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/ril_recipe_name"
+        app:layout_constraintTop_toBottomOf="@+id/ril_hashtag">
+
+        <include
+            layout="@layout/product_ratings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ril_recipe_saved"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            app:backgroundTint="@color/white"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@drawable/save"
+            app:tint="@color/unlikeColor" />
+
+        <ImageView
+            android:id="@+id/ril_recipe_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@drawable/share_icon"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
